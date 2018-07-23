@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		91359A442100C5BF00DBB5BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91359A432100C5BF00DBB5BF /* AppDelegate.swift */; };
-		91359A462100C5BF00DBB5BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91359A452100C5BF00DBB5BF /* ViewController.swift */; };
+		91359A462100C5BF00DBB5BF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91359A452100C5BF00DBB5BF /* MainViewController.swift */; };
 		91359A492100C5BF00DBB5BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91359A472100C5BF00DBB5BF /* Main.storyboard */; };
 		91359A4B2100C5C500DBB5BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91359A4A2100C5C500DBB5BF /* Assets.xcassets */; };
 		91359A4E2100C5C500DBB5BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91359A4C2100C5C500DBB5BF /* LaunchScreen.storyboard */; };
+		91359A562105ABDF00DBB5BF /* ScaleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91359A552105ABDF00DBB5BF /* ScaleAnimation.swift */; };
+		91BA8FF22105B1EF00E8084B /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA8FF12105B1EF00E8084B /* ScaleViewController.swift */; };
+		91BA8FF42105B4F000E8084B /* PresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA8FF32105B4F000E8084B /* PresentationStyle.swift */; };
+		91BA8FF72105BC4F00E8084B /* RotateAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA8FF62105BC4F00E8084B /* RotateAnimation.swift */; };
+		91BA8FFA2105C7B700E8084B /* RotateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA8FF92105C7B700E8084B /* RotateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		91359A402100C5BF00DBB5BF /* Transitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91359A432100C5BF00DBB5BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		91359A452100C5BF00DBB5BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91359A452100C5BF00DBB5BF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		91359A482100C5BF00DBB5BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91359A4A2100C5C500DBB5BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91359A4D2100C5C500DBB5BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91359A4F2100C5C500DBB5BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91359A552105ABDF00DBB5BF /* ScaleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleAnimation.swift; sourceTree = "<group>"; };
+		91BA8FF12105B1EF00E8084B /* ScaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewController.swift; sourceTree = "<group>"; };
+		91BA8FF32105B4F000E8084B /* PresentationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationStyle.swift; sourceTree = "<group>"; };
+		91BA8FF62105BC4F00E8084B /* RotateAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateAnimation.swift; sourceTree = "<group>"; };
+		91BA8FF92105C7B700E8084B /* RotateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +65,34 @@
 			isa = PBXGroup;
 			children = (
 				91359A432100C5BF00DBB5BF /* AppDelegate.swift */,
-				91359A452100C5BF00DBB5BF /* ViewController.swift */,
+				91BA8FF52105BC3400E8084B /* Controllers */,
+				91BA8FF82105BC5900E8084B /* Transition Animations */,
+				91BA8FF32105B4F000E8084B /* PresentationStyle.swift */,
 				91359A472100C5BF00DBB5BF /* Main.storyboard */,
 				91359A4A2100C5C500DBB5BF /* Assets.xcassets */,
 				91359A4C2100C5C500DBB5BF /* LaunchScreen.storyboard */,
 				91359A4F2100C5C500DBB5BF /* Info.plist */,
 			);
 			path = Transitions;
+			sourceTree = "<group>";
+		};
+		91BA8FF52105BC3400E8084B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				91359A452100C5BF00DBB5BF /* MainViewController.swift */,
+				91BA8FF12105B1EF00E8084B /* ScaleViewController.swift */,
+				91BA8FF92105C7B700E8084B /* RotateViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		91BA8FF82105BC5900E8084B /* Transition Animations */ = {
+			isa = PBXGroup;
+			children = (
+				91BA8FF62105BC4F00E8084B /* RotateAnimation.swift */,
+				91359A552105ABDF00DBB5BF /* ScaleAnimation.swift */,
+			);
+			path = "Transition Animations";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91359A462100C5BF00DBB5BF /* ViewController.swift in Sources */,
+				91359A462100C5BF00DBB5BF /* MainViewController.swift in Sources */,
+				91BA8FF22105B1EF00E8084B /* ScaleViewController.swift in Sources */,
+				91BA8FF42105B4F000E8084B /* PresentationStyle.swift in Sources */,
+				91359A562105ABDF00DBB5BF /* ScaleAnimation.swift in Sources */,
 				91359A442100C5BF00DBB5BF /* AppDelegate.swift in Sources */,
+				91BA8FFA2105C7B700E8084B /* RotateViewController.swift in Sources */,
+				91BA8FF72105BC4F00E8084B /* RotateAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
