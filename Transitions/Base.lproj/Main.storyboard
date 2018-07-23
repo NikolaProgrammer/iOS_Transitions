@@ -45,7 +45,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3M2-TF-aSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="924" y="458"/>
+            <point key="canvasLocation" x="924" y="538"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -97,6 +97,7 @@
                     </view>
                     <connections>
                         <outlet property="scaleButton" destination="qn3-Qy-RPr" id="Oig-pB-NvF"/>
+                        <segue destination="Yfx-HG-kWP" kind="show" identifier="interactive" id="BVX-i0-IXt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -137,7 +138,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Gd-QX-5qI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="924" y="-189"/>
+            <point key="canvasLocation" x="924" y="-219"/>
+        </scene>
+        <!--Transition View Controller-->
+        <scene sceneID="bn6-nf-38A">
+            <objects>
+                <viewController id="Yfx-HG-kWP" customClass="TransitionViewController" customModule="Transitions" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Kn-wl-huL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="KGo-GR-v61"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6NA-zk-2CE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657" y="134"/>
         </scene>
     </scenes>
 </document>

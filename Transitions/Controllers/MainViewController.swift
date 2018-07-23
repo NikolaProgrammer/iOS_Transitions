@@ -14,6 +14,14 @@ class MainViewController: UIViewController {
     @IBOutlet weak var scaleButton: UIButton!
     let scaleTransition = ScaleAnimation()
     let rotateTransition = RotateAnimation()
+    let transitionAnimation = TransitionAnimation()
+    
+    //MARK: View lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        transitionAnimation.sourceController = self
+    }
     
     //MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -30,6 +38,10 @@ class MainViewController: UIViewController {
 
             destination.transitioningDelegate = rotateTransition
             destination.modalPresentationStyle = .custom
+        case "interactive":
+            let destination = segue.destination as! TransitionViewController
+            transitionAnimation.destinationController = destination
+            destination.transitioningDelegate = transitionAnimation
         default:
             fatalError("Unknown segue: \(String(describing: segue.identifier))")
         }

@@ -17,6 +17,8 @@
 		91BA8FF42105B4F000E8084B /* PresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA8FF32105B4F000E8084B /* PresentationStyle.swift */; };
 		91BA8FF72105BC4F00E8084B /* RotateAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA8FF62105BC4F00E8084B /* RotateAnimation.swift */; };
 		91BA8FFA2105C7B700E8084B /* RotateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA8FF92105C7B700E8084B /* RotateViewController.swift */; };
+		91BA8FFC2105D86200E8084B /* TransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA8FFB2105D86200E8084B /* TransitionAnimation.swift */; };
+		91BA8FFE2105E57A00E8084B /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BA8FFD2105E57A00E8084B /* TransitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		91BA8FF32105B4F000E8084B /* PresentationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationStyle.swift; sourceTree = "<group>"; };
 		91BA8FF62105BC4F00E8084B /* RotateAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateAnimation.swift; sourceTree = "<group>"; };
 		91BA8FF92105C7B700E8084B /* RotateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateViewController.swift; sourceTree = "<group>"; };
+		91BA8FFB2105D86200E8084B /* TransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimation.swift; sourceTree = "<group>"; };
+		91BA8FFD2105E57A00E8084B /* TransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +70,7 @@
 			children = (
 				91359A432100C5BF00DBB5BF /* AppDelegate.swift */,
 				91BA8FF52105BC3400E8084B /* Controllers */,
-				91BA8FF82105BC5900E8084B /* Transition Animations */,
+				91BA8FF82105BC5900E8084B /* Animations */,
 				91BA8FF32105B4F000E8084B /* PresentationStyle.swift */,
 				91359A472100C5BF00DBB5BF /* Main.storyboard */,
 				91359A4A2100C5C500DBB5BF /* Assets.xcassets */,
@@ -82,17 +86,19 @@
 				91359A452100C5BF00DBB5BF /* MainViewController.swift */,
 				91BA8FF12105B1EF00E8084B /* ScaleViewController.swift */,
 				91BA8FF92105C7B700E8084B /* RotateViewController.swift */,
+				91BA8FFD2105E57A00E8084B /* TransitionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		91BA8FF82105BC5900E8084B /* Transition Animations */ = {
+		91BA8FF82105BC5900E8084B /* Animations */ = {
 			isa = PBXGroup;
 			children = (
 				91BA8FF62105BC4F00E8084B /* RotateAnimation.swift */,
 				91359A552105ABDF00DBB5BF /* ScaleAnimation.swift */,
+				91BA8FFB2105D86200E8084B /* TransitionAnimation.swift */,
 			);
-			path = "Transition Animations";
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,12 +173,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				91359A462100C5BF00DBB5BF /* MainViewController.swift in Sources */,
+				91BA8FFE2105E57A00E8084B /* TransitionViewController.swift in Sources */,
 				91BA8FF22105B1EF00E8084B /* ScaleViewController.swift in Sources */,
 				91BA8FF42105B4F000E8084B /* PresentationStyle.swift in Sources */,
 				91359A562105ABDF00DBB5BF /* ScaleAnimation.swift in Sources */,
 				91359A442100C5BF00DBB5BF /* AppDelegate.swift in Sources */,
 				91BA8FFA2105C7B700E8084B /* RotateViewController.swift in Sources */,
 				91BA8FF72105BC4F00E8084B /* RotateAnimation.swift in Sources */,
+				91BA8FFC2105D86200E8084B /* TransitionAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
